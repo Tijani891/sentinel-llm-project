@@ -1,0 +1,9 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+
+# GCP / Secrets
+*.json
+.env

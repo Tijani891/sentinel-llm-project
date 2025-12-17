@@ -4,13 +4,19 @@ variable "project_id" {
 }
 
 variable "region" {
-  description = "GCP Region"
+  description = "Primary GCP region"
   type        = string
   default     = "us-central1"
 }
 
 variable "service_account_name" {
-  description = "Service account name"
+  description = "Service account ID (no domain)"
   type        = string
-  default     = "sentinel-deployer"
+  default     = "sentinel-llm-sa"
+}
+
+variable "artifact_repo_name" {
+  description = "Artifact Registry repository name"
+  type        = string
+  default     = "sentinel-repo"
 }
